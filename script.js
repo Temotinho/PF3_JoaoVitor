@@ -15,7 +15,7 @@ document.getElementById("btn_calcular").addEventListener("click",function(){
     
         let ValorFuturo = (ValorAplicadoMensalmente * ((((1 + TaxaDeJuros) ** NumeroParcelas) - 1) / TaxaDeJuros)).toFixed(2)
         divResultado.style.display = "block"
-        resultado.innerHTML = `Jose da Silva, se voce aplicar ${formatter.format(ValorAplicadoMensalmente)}, à taxa de juros de ${TaxaDeJuros}% ao mês, durante ${NumeroParcelas} memes, acumulará uma poupança de ${formatter.format(ValorFuturo)}`
+        resultado.innerHTML = `Jose da Silva, se voce aplicar ${formatter.format(ValorAplicadoMensalmente)}, à taxa de juros de ${TaxaDeJuros}% ao mês, durante ${NumeroParcelas} meses, acumulará uma poupança de ${formatter.format(ValorFuturo)}`
     }
     else 
     {
